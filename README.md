@@ -12,14 +12,12 @@ Utilities included:
 lstbt is present in the ./lib subdirectory of the software.
 
 Steps:<br>
-1. `cd ./lib`
-2. `make`
+1. `make`
 
 ## Uninstalling lstbt and cleaning up the build
 
 Steps:<br>
-1. `cd ./lib`
-2. `make clean`
+1. `make clean`
 
 Note: The library installs itself in the /usr/bin filesystem path, hence pertinent permissions are required for the user to alter it.
 
@@ -51,7 +49,7 @@ The descriptors which house such control packets reside in TX ring-0 and RX ring
 
 To provide user better controllability of the TBT/USB4 subsystem, the DMA needs to be ported from kernel-space to the
 user-space, which would then conspicuously provide the user with all the operations needed to regulate the subsystem
-(in an IOMMU-protected environment). 
+(in an IOMMU-protected environment).
 
 This software incorporates the DMA porting with the help of VFIO.<br>
 For more details on VFIO, refer to the kernel documentation:<br>
