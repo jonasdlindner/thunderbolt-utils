@@ -7,7 +7,7 @@
 
 #include <stdbool.h>
 
-#include "../utils.h"
+#include "utils.h"
 #include "adapter.h"
 #include "router.h"
 

@@ -5,7 +5,7 @@
  * Copyright (C) 2023 Intel Corporation
  */
 
-#include "utils.h"
+#include "../src/utils.h"
 
 /* Indication of the TBT HW loading the f/w from the IMR */
 #define VS_CAP_9			0xc8

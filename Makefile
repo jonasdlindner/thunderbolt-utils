@@ -6,6 +6,7 @@
 # Copyright (C) 2023 Intel Corporation
 
 LIBTBT_EXEC = /usr/bin/lstbt
+SRC_DIR = src
 
 CC = gcc
 RM = rm -f
@@ -15,8 +16,8 @@ WARN_FLAGS = -Wall -W
 OPTIMIZE_FLAGS = -O2
 CFLAGS = $(DEBUG_FLAGS) $(WARN_FLAGS) $(OPTIMIZE_FLAGS)
 
-SRC_FILES = lstbt.c lstbt_t.c lstbt_r.c lstbt_v.c router.c adapter.c \
-	    helpers.c ../utils.c
+SRC_FILES := $(shell find $(SRC_DIR) -name '*.c')
+
 O_FILES = $(SRC_FILES:%.c=%.o)
 
 all: $(LIBTBT_EXEC)
@@ -26,4 +27,6 @@ $(LIBTBT_EXEC): $(O_FILES)
 
 clean:
 	-$(RM) $(LIBTBT_EXEC) $(O_FILES)
+example:
+	-
 

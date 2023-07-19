@@ -5,7 +5,7 @@
  * router of domain 0.
  *
  * To build and run:
- * gcc -g -Wall -W example.c tbtutils.c passthrough.c pciutils.c utils.c -o test
+ * gcc -g -Wall -W examples/example.c examples/tbtutils.c examples/passthrough.c examples/pciutils.c src/utils.c -o test
  * sudo ./test
  *
  * Copyright (C) 2023 Rajat Khandelwal <rajat.khandelwal@intel.com>
